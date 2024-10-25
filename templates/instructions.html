@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Instructions</title>
+</head>
+<body class="game-background">
+    <div class="container">
+        <h1>Instructions</h1>
+        <p>Welcome to the Number Guessing Game! 🎮</p>
+        <p>Your objective is to guess a randomly selected number between <strong>1</strong> and <strong>50</strong>.</p>
+        <h2>How to Play:</h2>
+        <ul>
+            <li>You have a maximum of <strong>5 attempts</strong> to guess the correct number.</li>
+            <li>After each guess, you'll receive feedback:</li>
+            <ul>
+                <li>If your guess is too low, you'll see "Your guess is too low."</li>
+                <li>If your guess is too high, you'll see "Your guess is too high."</li>
+                <li>If you guess correctly, you win!</li>
+            </ul>
+            <li>After 5 unsuccessful attempts, the game will reveal the correct number.</li>
+        </ul>
+        <h2>Tips:</h2>
+        <ul>
+            <li>Start with a number around the middle (25) to narrow down the possibilities quickly.</li>
+            <li>Pay attention to the hints after each guess!</li>
+            <li>Have fun and good luck! 🍀</li>
+        </ul>
+        <a href="/" class="back-button">Back to Main Menu</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Default text color */
+}
+
+/* Backgrounds */
+.game-background {
+    background-image: url('../static/back.jpg'); /* Use back.jpg */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-background {
+    background-image: url('../static/win-background.jpeg'); /* Use win-background.jpeg */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Buttons */
+.start-button, .instructions-button, .play-again-button, .back-button {
+    display: inline-block;
+    padding: 15px 25px; /* More padding for buttons */
+    margin: 10px;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #007bff; /* Blue color */
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Bigger text for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Adding transform for hover */
+}
+
+.start-button:hover, .instructions-button:hover, .play-again-button:hover, .back-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Input Styles */
+.guess-input {
+    padding: 15px; /* Increased padding */
+    width: 350px; /* Increased width */
+    font-size: 20px; /* Bigger text for input */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit-button {
+    padding: 15px 20px; /* More padding for buttons */
+    border-radius: 5px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    font-size: 20px; /* Bigger text for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Adding transform for hover */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Message Styles */
+.message {
+    margin-top: 20px;
+    font-size: 24px; /* Increased font size for visibility */
+    animation: fadeIn 1s; /* Add fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Additional styles for instructions page */
+h2 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+ul {
+    text-align: left; /* Align list items to the left */
+    padding: 0 20px; /* Add some padding for better readability */
+}
+
+.container {
+    max-width: 800px; /* Limit container width for better layout */
+    margin: auto; /* Center container */
+}

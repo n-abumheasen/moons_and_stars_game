@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Congratulations!</title>
+</head>
+<body class="win-background">
+    <div class="container">
+        <h1>Congratulations! 🎉</h1>
+        <p>You guessed the number <strong>{{ number }}</strong> correctly!</p>
+        <a href="/play-again" class="play-again-button">Play Again</a>
+    </div>
+</body>
+</html>

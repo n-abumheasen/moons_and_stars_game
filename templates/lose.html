@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Game Over</title>
+</head>
+<body class="game-background">
+    <div class="container">
+        <h1>Game Over! 😢</h1>
+        <p>You've used all your attempts. The correct number was <strong>{{ number }}</strong>.</p>
+        <a href="/play-again" class="play-again-button">Play Again</a>
+    </div>
+</body>
+</html>
